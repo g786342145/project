@@ -3,9 +3,15 @@ import VueRouter from 'vue-router'  //引入路由
 
 Vue.use(VueRouter)  //使用vue对路由进行注册
 
+const Film = ()=>import('@/views/film.vue')
+const Center = ()=>import('@/views/center.vue')
+const Cinema = ()=>import('@/views/cinema.vue')
+
 const router = new VueRouter({  //创建一个路由实例
 	routes:[
-		
+		{ path: '/flim', component: Film },
+		{ path: '/center', component: Center },
+		{ path: '/cinema', component: Cinema }
 	]
 })
 
