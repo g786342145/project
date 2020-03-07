@@ -24,25 +24,36 @@ export default {
 		margin: 0;
 		padding: 0
 	}
-	#app{
-		// height: 100%;
-		.floor{
-			position: fixed;
-			bottom: 0;
-			display: flex;
+	html{
+		width: 100%;
+		height: 100%;
+		body{
 			width: 100%;
-			border-top: 1px solid #ccc;
-			.active{
-				color: red;
-			}
-			.butten{
-				flex: 1;
-				text-align: center;
-				height: 3rem;
-				line-height: 3rem;
+			height: 100%;
+			#app{
+				height: 100%;
+				width: 100%;
+				.floor{
+					position: fixed;
+					bottom: 0;
+					display: flex;
+					width: 100%;
+					border-top: 1px solid #ccc;
+					background-color: #fff;
+					.active{
+						color: red;
+					}
+					.butten{
+						flex: 1;
+						text-align: center;
+						height: 3rem;
+						line-height: 3rem;
+					}
+				}
 			}
 		}
 	}
+	
 		
 			
 				
